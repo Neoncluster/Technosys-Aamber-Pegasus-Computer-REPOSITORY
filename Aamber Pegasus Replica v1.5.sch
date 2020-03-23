@@ -804,8 +804,8 @@ $EndSheet
 $Sheet
 S 23600 16000 7300 7500
 U 63615299
-F0 "Page 8: Video Shift Register" 50
-F1 "page-8-video-shiftreg.sch" 50
+F0 "Page 7: Video Shift Register" 50
+F1 "page-7-video-shiftreg.sch" 50
 $EndSheet
 $Sheet
 S 32000 16000 7400 7500
