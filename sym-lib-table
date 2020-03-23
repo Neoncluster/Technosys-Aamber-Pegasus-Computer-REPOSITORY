@@ -1,4 +1,3 @@
 (sym_lib_table
   (lib (name Aamber-Pegasus-Replica-v1.5-rescue)(type Legacy)(uri "${KIPRJMOD}/Aamber Pegasus Replica v1.5-rescue.lib")(options "")(descr ""))
-  (lib (name Aamber)(type Legacy)(uri ${KIPRJMOD}/Aamber.lib)(options "")(descr ""))
 )
