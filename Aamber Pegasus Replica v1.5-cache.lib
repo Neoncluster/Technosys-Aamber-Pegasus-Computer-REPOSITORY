@@ -8,7 +8,6 @@ F0 "U" 0 50 50 H V C CNN
 F1 "74xx_74AHC04" 0 -50 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-ALIAS 74HC04 74HCT04 74AHC04 74AHCT04
 $FPLIST
  DIP*W7.62mm*
  SSOP?14*
@@ -121,6 +120,7 @@ F0 "U" 0 50 50 H V C CNN
 F1 "74xx_74LS04" 0 -50 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+ALIAS 74HC04 74HCT04 74AHC04 74AHCT04
 $FPLIST
  DIP*W7.62mm*
  SSOP?14*
@@ -781,11 +781,11 @@ X Q1 9 500 100 200 L 50 50 1 0 O
 ENDDRAW
 ENDDEF
 #
-# Aamber-Pegasus-Replica-v1.5-rescue_MC14066-Aamber
+# Aamber_MC14066
 #
-DEF Aamber-Pegasus-Replica-v1.5-rescue_MC14066-Aamber U 0 40 Y Y 1 F N
+DEF Aamber_MC14066 U 0 40 Y Y 1 F N
 F0 "U" -400 850 50 H V C CNN
-F1 "Aamber-Pegasus-Replica-v1.5-rescue_MC14066-Aamber" -300 750 50 H V C CNN
+F1 "Aamber_MC14066" -300 750 50 H V C CNN
 F2 "" -350 800 50 H I C CNN
 F3 "" -350 800 50 H I C CNN
 DRAW
@@ -807,11 +807,11 @@ X OUT3 9 500 150 200 L 50 50 1 1 T
 ENDDRAW
 ENDDEF
 #
-# Aamber-Pegasus-Replica-v1.5-rescue_MC2114RAM-Aamber
+# Aamber_MC2114RAM
 #
-DEF Aamber-Pegasus-Replica-v1.5-rescue_MC2114RAM-Aamber U 0 40 Y Y 1 F N
+DEF Aamber_MC2114RAM U 0 40 Y Y 1 F N
 F0 "U" 0 900 50 H V C CNN
-F1 "Aamber-Pegasus-Replica-v1.5-rescue_MC2114RAM-Aamber" -400 800 50 H V C CNN
+F1 "Aamber_MC2114RAM" -400 800 50 H V C CNN
 F2 "" 0 900 50 H I C CNN
 F3 "" 0 900 50 H I C CNN
 DRAW
@@ -837,11 +837,11 @@ X GND 9 0 -800 200 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# Aamber-Pegasus-Replica-v1.5-rescue_MC66710-Aamber
+# Aamber_MC66710
 #
-DEF Aamber-Pegasus-Replica-v1.5-rescue_MC66710-Aamber U 0 40 Y Y 1 F N
+DEF Aamber_MC66710 U 0 40 Y Y 1 F N
 F0 "U" -150 1300 50 H V C CNN
-F1 "Aamber-Pegasus-Replica-v1.5-rescue_MC66710-Aamber" -300 1200 50 H V C CNN
+F1 "Aamber_MC66710" -300 1200 50 H V C CNN
 F2 "" -250 1500 50 H I C CNN
 F3 "" -250 1500 50 H I C CNN
 DRAW
@@ -873,11 +873,11 @@ X A4 9 -400 600 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Aamber-Pegasus-Replica-v1.5-rescue_TMS2532-Aamber
+# Aamber_TMS2532
 #
-DEF Aamber-Pegasus-Replica-v1.5-rescue_TMS2532-Aamber IC 0 40 Y Y 1 F N
+DEF Aamber_TMS2532 IC 0 40 Y Y 1 F N
 F0 "IC" -450 1250 50 H V C CNN
-F1 "Aamber-Pegasus-Replica-v1.5-rescue_TMS2532-Aamber" -350 1150 50 H V C CNN
+F1 "Aamber_TMS2532" -350 1150 50 H V C CNN
 F2 "" -100 1150 50 H I C CNN
 F3 "" -100 1150 50 H I C CNN
 DRAW
