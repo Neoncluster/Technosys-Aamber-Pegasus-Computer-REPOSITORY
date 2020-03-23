@@ -2282,7 +2282,7 @@ VAC
 Text Notes 11100 5950 0    50   ~ 0
 50HERTZ
 $Comp
-L Aamber-Pegasus-Replica-v1.5-rescue:MC2114RAM-Aamber IC25
+L Aamber:MC2114RAM IC25
 U 1 1 5E6FDFAA
 P 4500 19250
 F 0 "IC25" H 4285 19905 50  0000 C CNN
@@ -2293,7 +2293,7 @@ F 3 "" H 4500 19250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Aamber-Pegasus-Replica-v1.5-rescue:MC2114RAM-Aamber IC27
+L Aamber:MC2114RAM IC27
 U 1 1 5E75CD16
 P 4500 21550
 F 0 "IC27" H 4270 22220 50  0000 C CNN
@@ -2304,7 +2304,7 @@ F 3 "" H 4500 21550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Aamber-Pegasus-Replica-v1.5-rescue:MC2114RAM-Aamber IC26
+L Aamber:MC2114RAM IC26
 U 1 1 5E75E6DC
 P 7500 19200
 F 0 "IC26" H 7290 19860 50  0000 C CNN
@@ -2315,7 +2315,7 @@ F 3 "" H 7500 19200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Aamber-Pegasus-Replica-v1.5-rescue:MC2114RAM-Aamber IC28
+L Aamber:MC2114RAM IC28
 U 1 1 5E75E6E6
 P 7500 21500
 F 0 "IC28" H 7280 22165 50  0000 C CNN
@@ -3008,7 +3008,7 @@ D6
 Text Label 8050 16900 0    50   ~ 0
 D7
 $Comp
-L Aamber-Pegasus-Replica-v1.5-rescue:MC2114RAM-Aamber IC37
+L Aamber:MC2114RAM IC37
 U 1 1 5E8D23AE
 P 19650 25250
 F 0 "IC37" H 19425 25920 50  0000 C CNN
@@ -3030,7 +3030,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 16250 19950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Aamber-Pegasus-Replica-v1.5-rescue:MC2114RAM-Aamber IC32
+L Aamber:MC2114RAM IC32
 U 1 1 5E98E810
 P 22000 20050
 F 0 "IC32" H 21750 20700 50  0000 C CNN
@@ -3087,7 +3087,7 @@ $EndComp
 Wire Wire Line
 	23150 20150 22500 20150
 $Comp
-L Aamber-Pegasus-Replica-v1.5-rescue:MC2114RAM-Aamber IC31
+L Aamber:MC2114RAM IC31
 U 1 1 5E98E80A
 P 19600 20000
 F 0 "IC31" H 19350 20650 50  0000 C CNN
@@ -3825,7 +3825,7 @@ Wire Wire Line
 Wire Wire Line
 	23700 22550 23950 22550
 $Comp
-L Aamber-Pegasus-Replica-v1.5-rescue:MC66710-Aamber IC36
+L Aamber:MC66710 IC36
 U 1 1 723C7D41
 P 16900 24900
 F 0 "IC36" H 16695 26210 50  0000 C CNN
@@ -3863,7 +3863,7 @@ Wire Wire Line
 	18250 24750 18250 24100
 Connection ~ 18250 24750
 $Comp
-L Aamber-Pegasus-Replica-v1.5-rescue:MC2114RAM-Aamber IC38
+L Aamber:MC2114RAM IC38
 U 1 1 7487509C
 P 21950 25250
 F 0 "IC38" H 21745 25905 50  0000 C CNN
@@ -3926,7 +3926,7 @@ Wire Wire Line
 Wire Wire Line
 	20150 22650 20150 23750
 $Comp
-L Aamber-Pegasus-Replica-v1.5-rescue:MC2114RAM-Aamber IC34
+L Aamber:MC2114RAM IC34
 U 1 1 5E8CE72A
 P 19650 22550
 F 0 "IC34" H 19435 23225 50  0000 C CNN
@@ -4767,7 +4767,7 @@ Wire Wire Line
 Wire Wire Line
 	41800 20300 39900 20300
 $Comp
-L Aamber-Pegasus-Replica-v1.5-rescue:MC14066-Aamber UIC44
+L Aamber:MC14066 UIC44
 U 1 1 60746A6C
 P 40800 21600
 F 0 "UIC44" H 40500 22450 50  0000 C CNN
@@ -5558,7 +5558,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 21050 3200 21050
 $Comp
-L Aamber-Pegasus-Replica-v1.5-rescue:MC2114RAM-Aamber IC24
+L Aamber:MC2114RAM IC24
 U 1 1 5E75E6D2
 P 7500 17100
 F 0 "IC24" H 7295 16445 50  0000 C CNN
@@ -5569,7 +5569,7 @@ F 3 "" H 7500 17100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Aamber-Pegasus-Replica-v1.5-rescue:MC2114RAM-Aamber IC23
+L Aamber:MC2114RAM IC23
 U 1 1 5E5E3975
 P 4500 17150
 F 0 "IC23" H 4330 16505 50  0000 C CNN
@@ -5646,7 +5646,7 @@ Wire Wire Line
 Wire Wire Line
 	22450 22650 22950 22650
 $Comp
-L Aamber-Pegasus-Replica-v1.5-rescue:MC2114RAM-Aamber IC35
+L Aamber:MC2114RAM IC35
 U 1 1 5E8D033D
 P 21950 22550
 F 0 "IC35" H 21725 23210 50  0000 C CNN
@@ -6873,7 +6873,7 @@ Entry Wire Line
 Entry Wire Line
 	37350 7750 37450 7850
 $Comp
-L Aamber-Pegasus-Replica-v1.5-rescue:TMS2532-Aamber IC20
+L Aamber:TMS2532 IC20
 U 1 1 5FA70CA2
 P 35850 9900
 F 0 "IC20" H 35700 10000 50  0000 C CNN
@@ -6884,7 +6884,7 @@ F 3 "" H 35850 9900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Aamber-Pegasus-Replica-v1.5-rescue:TMS2532-Aamber IC19
+L Aamber:TMS2532 IC19
 U 1 1 5FB0DA67
 P 35850 6900
 F 0 "IC19" H 35700 7000 50  0000 C CNN
@@ -6921,7 +6921,7 @@ Wire Wire Line
 Wire Wire Line
 	37450 7250 40250 7250
 $Comp
-L Aamber-Pegasus-Replica-v1.5-rescue:TMS2532-Aamber IC18
+L Aamber:TMS2532 IC18
 U 1 1 5FBFC0B5
 P 35850 3850
 F 0 "IC18" H 35700 3950 50  0000 C CNN
