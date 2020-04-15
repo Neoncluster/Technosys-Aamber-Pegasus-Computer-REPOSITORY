@@ -615,10 +615,10 @@ Wire Wire Line
 	31500 29900 31950 29900
 Connection ~ 31950 28600
 Wire Wire Line
-	31950 28600 36550 28600
+	31950 28600 35250 28600
 Connection ~ 31950 29900
 Wire Wire Line
-	31950 29900 36550 29900
+	31950 29900 35250 29900
 $Comp
 L 74xx:74LS04 U?
 U 7 1 5E7286AF
@@ -768,51 +768,80 @@ Wire Wire Line
 $Sheet
 S 2600 2900 7400 6900
 U 62E73570
-F0 "Page 1: Video Timing" 50
-F1 "page-1-video-timing.sch" 50
+F0 "Page 1: Video Timing" 200
+F1 "page-1-video-timing.sch" 200
 $EndSheet
 $Sheet
 S 10600 2900 7400 6900
 U 6310F054
-F0 "Page 2: CPU" 50
-F1 "page-2-cpu.sch" 50
+F0 "Page 2: CPU" 200
+F1 "page-2-cpu.sch" 200
 $EndSheet
 $Sheet
 S 19000 2900 7400 6900
 U 6334D21A
-F0 "Page 3: selection logic" 50
-F1 "page-3-select-logic.sch" 50
+F0 "Page 3: selection logic" 200
+F1 "page-3-select-logic.sch" 200
 $EndSheet
 $Sheet
 S 27000 2900 7300 6900
 U 6342198F
-F0 "Page 4: ROM and system I/O" 50
-F1 "page-4-rom-sysio.sch" 50
+F0 "Page 4: ROM and system I/O" 200
+F1 "page-4-rom-sysio.sch" 200
 $EndSheet
 $Sheet
 S 4400 16000 8100 7400
 U 63541131
-F0 "Page 4: RAM and User I/O" 50
-F1 "page-5-ram-userio.sch" 50
+F0 "Page 4: RAM and User I/O" 200
+F1 "page-5-ram-userio.sch" 200
 $EndSheet
 $Sheet
 S 14300 16000 7900 7500
 U 635A77FC
-F0 "Page 6: Character Generators" 50
-F1 "page-6-chargen.sch" 50
+F0 "Page 6: Character Generators" 200
+F1 "page-6-chargen.sch" 200
 $EndSheet
 $Sheet
 S 23600 16000 7300 7500
 U 63615299
-F0 "Page 7: Video Shift Register" 50
-F1 "page-7-video-shiftreg.sch" 50
+F0 "Page 7: Video Shift Register" 200
+F1 "page-7-video-shiftreg.sch" 200
 $EndSheet
 $Sheet
 S 32000 16000 7400 7500
 U 63633506
-F0 "Page 8: Video Out and Kbd" 50
-F1 "page-8-kbd-video.sch" 50
+F0 "Page 8: Video Out and Kbd" 200
+F1 "page-8-kbd-video.sch" 200
 $EndSheet
 Text Notes 10600 28100 0    500  ~ 0
 Power and bypassing\n
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5F9A3690
+P 35250 28600
+F 0 "#FLG?" H 35250 28675 50  0001 C CNN
+F 1 "PWR_FLAG" H 35250 28773 50  0000 C CNN
+F 2 "" H 35250 28600 50  0001 C CNN
+F 3 "~" H 35250 28600 50  0001 C CNN
+	1    35250 28600
+	1    0    0    -1  
+$EndComp
+Connection ~ 35250 28600
+Wire Wire Line
+	35250 28600 36550 28600
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5F9A4859
+P 35250 29900
+F 0 "#FLG?" H 35250 29975 50  0001 C CNN
+F 1 "PWR_FLAG" H 35250 30073 50  0000 C CNN
+F 2 "" H 35250 29900 50  0001 C CNN
+F 3 "~" H 35250 29900 50  0001 C CNN
+	1    35250 29900
+	1    0    0    -1  
+$EndComp
+Connection ~ 35250 29900
+Wire Wire Line
+	35250 29900 36550 29900
+Connection ~ 24800 8700
 $EndSCHEMATC
