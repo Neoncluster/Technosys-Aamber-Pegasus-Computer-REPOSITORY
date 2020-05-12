@@ -843,4 +843,5 @@ $EndComp
 Connection ~ 35250 29900
 Wire Wire Line
 	35250 29900 36550 29900
+NoConn ~ 8900 7250
 $EndSCHEMATC

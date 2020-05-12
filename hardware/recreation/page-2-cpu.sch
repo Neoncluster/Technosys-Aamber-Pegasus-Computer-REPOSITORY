@@ -26,7 +26,7 @@ Text Label 3400 8600 2    50   ~ 0
 Text Label 3300 8900 2    50   ~ 0
 ~H
 Text Label 10250 11350 2    50   ~ 0
-~R~-W
+R-~W
 Text Label 10250 11200 2    50   ~ 0
 E
 $Comp
@@ -440,7 +440,7 @@ Wire Wire Line
 Text GLabel 13800 5350 0    50   Input ~ 0
 ~SEL
 Text GLabel 13600 5250 0    50   Input ~ 0
-~R~-W
+R-~W
 Wire Wire Line
 	14150 5250 13600 5250
 $Comp
@@ -585,7 +585,7 @@ $EndComp
 Text GLabel 3100 9100 0    50   Output ~ 0
 MR
 Text GLabel 9800 11350 0    50   Output ~ 0
-~R~-W
+R-~W
 $Comp
 L Device:R R12
 U 1 1 63124184
@@ -990,8 +990,13 @@ Wire Wire Line
 	13800 7100 14150 7100
 Wire Wire Line
 	15150 6700 15700 6700
+NoConn ~ 12700 9100
+NoConn ~ 12700 8800
+NoConn ~ 12700 8700
 Wire Bus Line
 	15600 4450 15600 5500
 Wire Bus Line
 	15800 6800 15800 9750
+Text Notes 3750 2850 0    100  ~ 0
+Created: PL, 2/27/2020\nReviewed: DF, 5/11/2020
 $EndSCHEMATC
