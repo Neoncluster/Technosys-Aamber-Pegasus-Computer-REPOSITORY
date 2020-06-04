@@ -4,11 +4,11 @@ EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
 Sheet 2 9
-Title "Video Timing Circuit"
-Date "2020-04-15"
+Title "Aamber Pegasus Recreation"
+Date "2020-06-04"
 Rev "1.0"
 Comp ""
-Comment1 ""
+Comment1 "Video Timing Circuit"
 Comment2 ""
 Comment3 ""
 Comment4 ""

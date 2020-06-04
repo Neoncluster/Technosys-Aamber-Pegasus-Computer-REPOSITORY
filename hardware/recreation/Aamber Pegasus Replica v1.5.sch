@@ -4,9 +4,9 @@ EELAYER END
 $Descr A0 46811 33110
 encoding utf-8
 Sheet 1 9
-Title ""
-Date ""
-Rev ""
+Title "Aamber Pegasus Recreation"
+Date "2020-06-04"
+Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""

@@ -4,11 +4,11 @@ EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
 Sheet 4 9
-Title "Selection Logic"
-Date ""
-Rev ""
+Title "Aamber Pegasus Recreation"
+Date "2020-06-04"
+Rev "1.0"
 Comp ""
-Comment1 ""
+Comment1 "Address Logic"
 Comment2 ""
 Comment3 ""
 Comment4 ""

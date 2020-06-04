@@ -4,11 +4,11 @@ EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
 Sheet 3 9
-Title "CPU"
-Date ""
-Rev ""
+Title "Aamber Pegasus Recreation"
+Date "2020-06-04"
+Rev "1.0"
 Comp ""
-Comment1 ""
+Comment1 "CPU"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -993,10 +993,10 @@ Wire Wire Line
 NoConn ~ 12700 9100
 NoConn ~ 12700 8800
 NoConn ~ 12700 8700
+Text Notes 3750 2850 0    100  ~ 0
+Created: PL, 2/27/2020\nReviewed: DF, 5/11/2020
 Wire Bus Line
 	15600 4450 15600 5500
 Wire Bus Line
 	15800 6800 15800 9750
-Text Notes 3750 2850 0    100  ~ 0
-Created: PL, 2/27/2020\nReviewed: DF, 5/11/2020
 $EndSCHEMATC

@@ -4,9 +4,9 @@ EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
 Sheet 9 9
-Title "Video Output and Keyboard Port"
-Date ""
-Rev ""
+Title "Aamber Pegasus Recreation"
+Date "2020-06-04"
+Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
