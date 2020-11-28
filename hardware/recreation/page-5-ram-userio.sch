@@ -5,7 +5,7 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 6 9
 Title "Aamber Pegasus Recreation"
-Date "2020-06-04"
+Date "2020-11-28"
 Rev "1.0"
 Comp ""
 Comment1 ""
@@ -557,16 +557,16 @@ $EndComp
 Wire Wire Line
 	9900 4300 10700 4300
 Wire Wire Line
-	10700 5300 13700 5300
+	10700 5350 13700 5350
 Wire Wire Line
-	10700 4300 10700 5300
+	10700 4300 10700 5350
 Wire Wire Line
 	12900 4250 13700 4250
 Wire Wire Line
-	13700 4250 13700 5300
-Connection ~ 13700 5300
+	13700 4250 13700 5350
+Connection ~ 13700 5350
 Wire Wire Line
-	13700 5300 14200 5300
+	13700 5350 14900 5350
 Wire Wire Line
 	9900 6400 10700 6400
 Wire Wire Line
@@ -579,25 +579,25 @@ Wire Wire Line
 	13700 6350 13700 7500
 Connection ~ 13700 7500
 Wire Wire Line
-	13700 7500 14200 7500
+	13700 7500 14900 7500
 Wire Wire Line
 	9900 8700 10700 8700
 Wire Wire Line
-	10700 8700 10700 9750
+	10700 8700 10700 9850
 Wire Wire Line
-	10700 9750 13700 9750
+	10700 9850 13700 9850
 Wire Wire Line
 	12900 8650 13700 8650
 Wire Wire Line
-	13700 8650 13700 9750
-Connection ~ 13700 9750
+	13700 8650 13700 9850
+Connection ~ 13700 9850
 Wire Wire Line
-	13700 9750 14200 9750
-Text GLabel 14200 5300 2    50   Input ~ 0
+	13700 9850 14900 9850
+Text GLabel 14900 5350 2    50   Input ~ 0
 RAM2
-Text GLabel 14200 7500 2    50   Input ~ 0
+Text GLabel 14900 7500 2    50   Input ~ 0
 RAM3
-Text GLabel 14200 9750 2    50   Input ~ 0
+Text GLabel 14900 9850 2    50   Input ~ 0
 RAM4
 Wire Wire Line
 	9900 3900 10250 3900
@@ -769,18 +769,10 @@ F 3 "" H 9400 4300 50  0001 C CNN
 	1    9400 4300
 	1    0    0    -1  
 $EndComp
-Text Label 13800 9750 0    50   ~ 0
-RAM4
-Text Label 13850 7500 0    50   ~ 0
-RAM3
 Text GLabel 14200 3250 2    50   BiDi ~ 0
 D0-D7
 Wire Bus Line
 	14200 3250 13350 3250
-Text Label 13900 5300 0    50   ~ 0
-RAM2
-Text Label 13850 3250 0    50   ~ 0
-D0-D7
 Wire Bus Line
 	13350 10100 10350 10100
 Connection ~ 10350 10100
@@ -795,12 +787,6 @@ F 3 "http://pdf.datasheetcatalog.com/datasheet/motorola/6821.pdf" H 11950 11900 
 	1    11950 11900
 	1    0    0    -1  
 $EndComp
-Text Label 10950 11700 0    50   ~ 0
-A6
-Text Label 12600 11700 0    50   ~ 0
-CUA2
-Text Label 12600 11600 0    50   ~ 0
-CUA1
 Text GLabel 12950 11700 2    50   BiDi ~ 0
 CUA2
 Text GLabel 12950 11600 2    50   Input ~ 0
@@ -821,16 +807,6 @@ Text Label 12600 10800 0    50   ~ 0
 UA1
 Text Label 12600 10700 0    50   ~ 0
 UA0
-Text Label 10950 13000 0    50   ~ 0
-~RESET
-Text Label 10950 12800 0    50   ~ 0
-~IRQ
-Text Label 10950 12500 0    50   ~ 0
-E
-Text Label 10950 12400 0    50   ~ 0
-R-W
-Text Label 10950 12200 0    50   ~ 0
-PIA2
 Text Label 11200 10700 0    50   ~ 0
 D0
 Text Label 11200 10800 0    50   ~ 0
@@ -847,10 +823,6 @@ Text Label 11200 11300 0    50   ~ 0
 D6
 Text Label 11200 11400 0    50   ~ 0
 D7
-Text GLabel 14000 11650 2    50   BiDi ~ 0
-UA0-UA7
-Text Label 13450 11650 0    50   ~ 0
-UA0-UA7
 $Comp
 L power:GND #PWR?
 U 1 1 63553416
@@ -873,8 +845,6 @@ F 3 "" H 11950 10500 50  0001 C CNN
 	1    11950 10500
 	1    0    0    -1  
 $EndComp
-Text Label 10950 11800 0    50   ~ 0
-A5
 Text GLabel 10900 11700 0    50   Input ~ 0
 A6
 Text GLabel 10900 11800 0    50   Input ~ 0
@@ -882,21 +852,21 @@ A5
 Text GLabel 10900 12200 0    50   Input ~ 0
 PIA2
 Text GLabel 10900 12400 0    50   Input ~ 0
-R-W
-Text GLabel 10900 12500 0    50   Input ~ 0
+R-~W
+Text GLabel 10650 12500 0    50   Input ~ 0
 E
 Text GLabel 10900 13000 0    50   Input ~ 0
 ~RESET
 $Comp
 L power:+5V #PWR?
 U 1 1 635533FC
-P 10900 12100
-F 0 "#PWR?" H 10900 11950 50  0001 C CNN
-F 1 "+5V" V 10915 12228 50  0000 L CNN
-F 2 "" H 10900 12100 50  0001 C CNN
-F 3 "" H 10900 12100 50  0001 C CNN
-	1    10900 12100
-	0    -1   -1   0   
+P 10000 11950
+F 0 "#PWR?" H 10000 11800 50  0001 C CNN
+F 1 "+5V" V 10015 12078 50  0000 L CNN
+F 2 "" H 10000 11950 50  0001 C CNN
+F 3 "" H 10000 11950 50  0001 C CNN
+	1    10000 11950
+	1    0    0    -1  
 $EndComp
 Text GLabel 10900 12800 0    50   Output ~ 0
 ~IRQ
@@ -936,8 +906,6 @@ Wire Wire Line
 	11450 11200 10450 11200
 Wire Wire Line
 	11450 11300 10450 11300
-Wire Bus Line
-	13300 11650 14000 11650
 Entry Wire Line
 	13200 10700 13300 10800
 Entry Wire Line
@@ -974,10 +942,6 @@ Wire Wire Line
 	12950 11600 12450 11600
 Wire Wire Line
 	12950 11700 12450 11700
-Text Label 12600 13000 0    50   ~ 0
-CUB2
-Text Label 12600 12900 0    50   ~ 0
-CUB1
 Text GLabel 12950 13000 2    50   BiDi ~ 0
 CUB2
 Text GLabel 12950 12900 2    50   Input ~ 0
@@ -998,12 +962,6 @@ Text Label 12600 12100 0    50   ~ 0
 UB1
 Text Label 12600 12000 0    50   ~ 0
 UB0
-Text GLabel 14000 12950 2    50   BiDi ~ 0
-UB0-UB7
-Text Label 13450 12950 0    50   ~ 0
-UB0-UB7
-Wire Bus Line
-	13300 12950 14000 12950
 Entry Wire Line
 	13200 12000 13300 12100
 Entry Wire Line
@@ -1052,7 +1010,7 @@ Wire Wire Line
 	11250 12800 10900 12800
 Connection ~ 11250 12800
 Wire Wire Line
-	11450 12500 10900 12500
+	11450 12500 10650 12500
 Wire Wire Line
 	11450 12400 10900 12400
 Wire Wire Line
@@ -1063,21 +1021,80 @@ Wire Wire Line
 	11250 12100 11450 12100
 Wire Wire Line
 	11250 12000 11450 12000
+Text GLabel 14900 4350 2    50   Input ~ 0
+R-~W
 Wire Wire Line
-	11250 12100 10900 12100
+	14600 4350 14600 5250
+Wire Wire Line
+	14600 6450 13100 6450
+Connection ~ 14600 4350
+Wire Wire Line
+	14600 4350 14900 4350
+Wire Wire Line
+	14600 6450 14600 8750
+Wire Wire Line
+	14600 8750 13100 8750
+Connection ~ 14600 6450
+Wire Wire Line
+	9900 4400 10100 4400
+Wire Wire Line
+	10100 4400 10100 5250
+Wire Wire Line
+	9900 6500 10150 6500
+Wire Wire Line
+	10150 6500 10150 7400
+Wire Wire Line
+	10150 7400 13100 7400
+Wire Wire Line
+	13100 7400 13100 6450
+Connection ~ 13100 6450
+Wire Wire Line
+	13100 6450 12900 6450
+Connection ~ 14600 5250
+Wire Wire Line
+	14600 5250 14600 6450
+Wire Wire Line
+	10100 5250 14600 5250
+Wire Wire Line
+	12900 4350 14600 4350
+Wire Wire Line
+	9900 8800 10200 8800
+Wire Wire Line
+	10200 8800 10200 9750
+Wire Wire Line
+	10200 9750 13100 9750
+Wire Wire Line
+	13100 9750 13100 8750
+Connection ~ 13100 8750
+Wire Wire Line
+	13100 8750 12900 8750
+Wire Wire Line
+	10000 11950 10000 12100
+Wire Wire Line
+	10000 12100 11250 12100
 Connection ~ 11250 12100
+Text GLabel 14000 11650 2    50   BiDi ~ 0
+UA0-UA7
 Wire Bus Line
-	10350 10100 10350 11300
+	13300 11650 14000 11650
 Wire Bus Line
 	13300 10800 13300 11650
 Wire Bus Line
-	13300 12100 13300 12950
-Wire Bus Line
-	10350 3900 10350 10100
+	10350 10100 10350 11300
 Wire Bus Line
 	13350 3250 13350 10100
 Wire Bus Line
-	8000 3250 8000 9000
+	10350 3900 10350 10100
 Wire Bus Line
 	11000 3250 11000 8950
+Wire Bus Line
+	8000 3250 8000 9000
+Wire Bus Line
+	13300 12100 13300 12950
+Text GLabel 14000 12950 2    50   BiDi ~ 0
+UB0-UB7
+Wire Bus Line
+	13300 12950 14000 12950
+Text Notes 6050 2550 0    50   ~ 0
+Created: PL, 2/27/2020\nReviewed: DF, 11/28/2020
 $EndSCHEMATC
