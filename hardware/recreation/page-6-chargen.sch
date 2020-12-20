@@ -251,25 +251,15 @@ F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 10050 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8600 4450 8400 4450
-Wire Wire Line
-	8400 4450 8400 4100
-Wire Wire Line
 	8400 4100 8250 4100
-Wire Wire Line
-	8600 4550 8400 4550
-Wire Wire Line
-	8400 4550 8400 5000
-Wire Wire Line
-	8400 5000 6300 5000
 Wire Wire Line
 	8600 4350 8500 4350
 Wire Wire Line
-	8500 4350 8500 3600
+	8500 4350 8500 3480
 Wire Wire Line
-	7650 4100 6300 4100
+	7650 4100 6190 4100
 Wire Wire Line
-	7650 4650 6300 4650
+	7650 4650 6260 4650
 Wire Wire Line
 	10850 6600 10650 6600
 Wire Wire Line
@@ -502,8 +492,6 @@ Wire Wire Line
 	13200 12050 12800 12050
 Wire Wire Line
 	13200 12750 12800 12750
-Text Label 15050 13050 0    50   ~ 0
-C0-C7
 Wire Bus Line
 	14450 13050 15400 13050
 Entry Wire Line
@@ -652,27 +640,27 @@ $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 635D3E52
-P 8500 10050
-F 0 "#PWR?" H 8500 9900 50  0001 C CNN
-F 1 "+5V" V 8515 10178 50  0000 L CNN
-F 2 "" H 8500 10050 50  0001 C CNN
-F 3 "" H 8500 10050 50  0001 C CNN
-	1    8500 10050
-	0    -1   -1   0   
+P 8500 9450
+F 0 "#PWR?" H 8500 9300 50  0001 C CNN
+F 1 "+5V" V 8515 9578 50  0000 L CNN
+F 2 "" H 8500 9450 50  0001 C CNN
+F 3 "" H 8500 9450 50  0001 C CNN
+	1    8500 9450
+	1    0    0    -1  
 $EndComp
 Text Label 8650 9850 2    50   ~ 0
 B6
 Wire Wire Line
-	8700 10050 8500 10050
+	8500 9650 8500 9450
 $Comp
 L 74xx:74LS86 IC33
 U 2 1 635D3E5A
-P 9000 9950
-F 0 "IC33" H 9000 9633 50  0000 C CNN
-F 1 "74LS86" H 9000 9724 50  0000 C CNN
-F 2 "" H 9000 9950 50  0001 C CNN
-F 3 "74xx/74ls86.pdf" H 9000 9950 50  0001 C CNN
-	2    9000 9950
+P 9000 9750
+F 0 "IC33" H 9000 9433 50  0000 C CNN
+F 1 "74LS86" H 9000 9524 50  0000 C CNN
+F 2 "" H 9000 9750 50  0001 C CNN
+F 3 "74xx/74ls86.pdf" H 9000 9750 50  0001 C CNN
+	2    9000 9750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -723,7 +711,7 @@ Entry Wire Line
 Wire Wire Line
 	14200 12450 14700 12450
 Wire Wire Line
-	14700 12450 14700 10850
+	14700 12450 14700 10710
 Connection ~ 14700 9750
 Wire Wire Line
 	14700 9750 14850 9750
@@ -734,9 +722,9 @@ Wire Wire Line
 Wire Wire Line
 	14700 13750 14700 12450
 Connection ~ 14700 12450
-Connection ~ 14700 10850
+Connection ~ 14700 10710
 Wire Wire Line
-	14700 10850 14700 9750
+	14700 10710 14700 9750
 Wire Wire Line
 	8450 3050 8450 3400
 Connection ~ 8450 3050
@@ -763,36 +751,36 @@ Wire Wire Line
 	7050 7450 7500 7450
 Wire Wire Line
 	9600 2450 7050 2450
-Text GLabel 6300 2950 0    50   Input ~ 0
+Text GLabel 6220 2950 0    50   Input ~ 0
 R-W
 Wire Wire Line
-	7650 2950 6300 2950
+	7650 2950 6220 2950
 Wire Wire Line
-	7650 3150 6300 3150
+	7650 3150 6095 3150
 Wire Wire Line
-	8500 3600 6300 3600
+	8500 3480 6140 3480
 Wire Wire Line
 	7050 2450 7050 7450
-Text GLabel 6300 3150 0    50   Input ~ 0
+Text GLabel 6095 3150 0    50   Input ~ 0
 ~E
-Text GLabel 6300 3600 0    50   Input ~ 0
+Text GLabel 6140 3480 0    50   Input ~ 0
 A9
-Text GLabel 6300 4100 0    50   Input ~ 0
+Text GLabel 6190 4100 0    50   Input ~ 0
 A11
-Text GLabel 6300 4650 0    50   Input ~ 0
+Text GLabel 6260 4650 0    50   Input ~ 0
 ROM1
-Text GLabel 6300 5000 0    50   Input ~ 0
+Text GLabel 6190 3630 0    50   Input ~ 0
 A10
-Text GLabel 6300 5400 0    50   Input ~ 0
+Text GLabel 6240 5400 0    50   Input ~ 0
 PAGE
 Wire Wire Line
 	9250 4500 9250 5200
 Wire Wire Line
-	9250 5200 6300 5200
+	9250 5200 6100 5200
 Connection ~ 9250 4500
 Wire Wire Line
 	9250 4500 9200 4500
-Text GLabel 6300 5200 0    50   Input ~ 0
+Text GLabel 6100 5200 0    50   Output ~ 0
 X
 Text GLabel 6250 7550 0    50   Input ~ 0
 RAM1
@@ -804,7 +792,7 @@ Wire Wire Line
 	9500 3250 9750 3250
 Connection ~ 9500 5400
 Wire Wire Line
-	9500 5400 6300 5400
+	9500 5400 6240 5400
 Text Label 10700 7500 0    50   ~ 0
 A9
 Text Label 10700 7400 0    50   ~ 0
@@ -953,7 +941,7 @@ Wire Wire Line
 Wire Wire Line
 	11900 9450 12050 9450
 Wire Wire Line
-	11900 9750 11900 10850
+	11900 9750 11900 10710
 $Comp
 L Aamber:MC2114RAM IC34
 U 1 1 635D3EF4
@@ -992,7 +980,7 @@ Wire Wire Line
 Wire Wire Line
 	12350 11850 12350 11200
 Wire Wire Line
-	11900 10850 14700 10850
+	11900 10710 14700 10710
 Wire Wire Line
 	12500 13600 10200 13600
 Wire Wire Line
@@ -1048,24 +1036,12 @@ Wire Wire Line
 	8250 11950 7950 11950
 Wire Wire Line
 	7950 12050 7950 11950
-Connection ~ 7950 11950
 Wire Wire Line
 	7950 12050 8250 12050
 Wire Wire Line
 	8250 12150 7950 12150
 Wire Wire Line
 	7950 12150 7950 12050
-$Comp
-L power:GND #PWR?
-U 1 1 635D3F29
-P 7550 11950
-F 0 "#PWR?" H 7550 11700 50  0001 C CNN
-F 1 "GND" H 7550 11800 50  0000 R CNN
-F 2 "" H 7550 11950 50  0001 C CNN
-F 3 "" H 7550 11950 50  0001 C CNN
-	1    7550 11950
-	0    1    1    0   
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 635D3F2F
@@ -1077,8 +1053,6 @@ F 3 "" H 8650 13300 50  0001 C CNN
 	1    8650 13300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7950 11950 7550 11950
 Wire Wire Line
 	8250 12250 7950 12250
 Wire Wire Line
@@ -1097,36 +1071,20 @@ F 3 "" H 8650 10850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14275 9650 14275 10700
+	14275 9650 14275 10790
 Wire Wire Line
 	14275 12350 14200 12350
 Wire Wire Line
-	11900 9650 11980 9650
+	11900 9650 12030 9650
 Wire Wire Line
-	11980 9650 11980 10915
+	12030 12350 11900 12350
 Wire Wire Line
-	11980 12350 11900 12350
+	9300 9750 9300 10790
 Wire Wire Line
-	9300 9950 9300 10700
+	9300 10790 14275 10790
+Connection ~ 14275 10790
 Wire Wire Line
-	9300 10700 14275 10700
-Connection ~ 14275 10700
-Wire Wire Line
-	14275 10700 14275 12350
-Wire Wire Line
-	8125 9850 8125 10375
-Wire Wire Line
-	8125 10375 9215 10375
-Wire Wire Line
-	9215 10375 9215 10915
-Wire Wire Line
-	9215 10915 11980 10915
-Connection ~ 8125 9850
-Wire Wire Line
-	8125 9850 8700 9850
-Connection ~ 11980 10915
-Wire Wire Line
-	11980 10915 11980 12350
+	14275 10790 14275 12350
 Wire Wire Line
 	10300 12595 10695 12595
 Wire Wire Line
@@ -1364,8 +1322,6 @@ Wire Wire Line
 Wire Wire Line
 	7150 12600 8250 12600
 Wire Wire Line
-	7900 9850 8125 9850
-Wire Wire Line
 	8250 11600 7900 11600
 Wire Wire Line
 	8250 11500 7900 11500
@@ -1484,33 +1440,23 @@ Wire Wire Line
 Connection ~ 6950 9800
 Wire Wire Line
 	6950 9800 6950 10100
-Wire Wire Line
-	6950 10950 6650 10950
 $Comp
 L power:+5V #PWR?
 U 1 1 635D400E
-P 6650 10950
-F 0 "#PWR?" H 6650 10800 50  0001 C CNN
-F 1 "+5V" H 6665 11078 50  0000 L CNN
-F 2 "" H 6650 10950 50  0001 C CNN
-F 3 "" H 6650 10950 50  0001 C CNN
-	1    6650 10950
-	0    -1   -1   0   
+P 6950 8730
+F 0 "#PWR?" H 6950 8580 50  0001 C CNN
+F 1 "+5V" H 6965 8858 50  0000 L CNN
+F 2 "" H 6950 8730 50  0001 C CNN
+F 3 "" H 6950 8730 50  0001 C CNN
+	1    6950 8730
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6950 10700 6950 10400
-Connection ~ 6950 10700
-Connection ~ 6950 10400
-Wire Wire Line
-	6950 10950 6950 10700
 Text Label 7400 10700 0    50   ~ 0
 B6
 Text Label 7400 10400 0    50   ~ 0
 B5
 Text Label 7400 10100 0    50   ~ 0
 B4
-Wire Wire Line
-	7100 10700 6950 10700
 Wire Wire Line
 	7100 10400 6950 10400
 $Comp
@@ -1563,34 +1509,64 @@ F 3 "~" H 7250 10100 50  0001 C CNN
 	1    7250 10100
 	0    -1   1    0   
 $EndComp
-Text Label 14800 8300 0    50   ~ 0
-B0-B7
-Text Label 13350 5500 0    50   ~ 0
-A0-A15
-Text Label 7400 5900 0    50   ~ 0
-D0-D7
-Text Label 9350 12150 0    50   ~ 0
-R0-R6
-Text Label 15550 9850 0    50   ~ 0
-CHAR-ROM
-Text Label 6400 7550 0    50   ~ 0
-RAM1
-Text Label 6450 5400 0    50   ~ 0
-PAGE
-Text Label 6450 5200 0    50   ~ 0
-X
-Text Label 6450 5000 0    50   ~ 0
-A10
-Text Label 6450 4650 0    50   ~ 0
-ROM1
-Text Label 6450 4100 0    50   ~ 0
-A11
-Text Label 6450 3600 0    50   ~ 0
-A9
-Text Label 6450 3150 0    50   ~ 0
-~E
-Text Label 6450 2950 0    50   ~ 0
-R-W
+Wire Wire Line
+	6950 8900 6950 8730
+Connection ~ 6950 8900
+Wire Wire Line
+	6950 10400 6950 10700
+Wire Wire Line
+	6950 10700 7100 10700
+Connection ~ 6950 10400
+Wire Wire Line
+	8500 9650 8700 9650
+$Comp
+L power:GND #PWR?
+U 1 1 635D3F29
+P 7950 12350
+F 0 "#PWR?" H 7950 12100 50  0001 C CNN
+F 1 "GND" H 7950 12200 50  0000 R CNN
+F 2 "" H 7950 12350 50  0001 C CNN
+F 3 "" H 7950 12350 50  0001 C CNN
+	1    7950 12350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 12350 7950 12250
+Connection ~ 7950 12250
+Wire Wire Line
+	12030 9650 12030 10870
+Wire Wire Line
+	7900 9850 8460 9850
+Wire Wire Line
+	8460 9850 8460 10180
+Wire Wire Line
+	8460 10180 9170 10180
+Wire Wire Line
+	9170 10180 9170 10870
+Wire Wire Line
+	9170 10870 12030 10870
+Connection ~ 8460 9850
+Wire Wire Line
+	8460 9850 8700 9850
+Connection ~ 12030 10870
+Wire Wire Line
+	12030 10870 12030 12350
+Wire Wire Line
+	8400 4100 8400 4550
+Wire Wire Line
+	8400 4550 8600 4550
+Wire Wire Line
+	6190 3630 8450 3630
+Wire Wire Line
+	8450 3630 8450 4450
+Wire Wire Line
+	8450 4450 8600 4450
+Wire Wire Line
+	9610 2450 15840 2450
+Text GLabel 15840 2450 2    50   Output ~ 0
+~R-W
+Text Notes 4690 1740 0    50   ~ 0
+Created: PL, 2/27/2020\nReviewed: DF, 12/9/2020
 Wire Bus Line
 	12100 6700 12100 8300
 Wire Bus Line

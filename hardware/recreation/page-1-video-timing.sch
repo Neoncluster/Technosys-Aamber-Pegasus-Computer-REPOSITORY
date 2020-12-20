@@ -13,14 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 15350 10450 2    50   ~ 0
-~FIRQ
-Text Label 15350 9700 2    50   ~ 0
-CLR
-Text Label 15400 6650 2    50   ~ 0
-~HSYNC
-Text Label 14900 4950 2    50   ~ 0
-E
 Connection ~ 14750 6650
 Wire Wire Line
 	14750 6650 15550 6650
@@ -120,7 +112,7 @@ Wire Wire Line
 Wire Wire Line
 	12700 8900 14750 8900
 Text GLabel 15550 9700 2    50   Input ~ 0
-CLR
+~CLR
 $Comp
 L power:GND #PWR?
 U 1 1 62E8C837

@@ -13,30 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 8450 11550 2    50   ~ 0
-ROM3
-Text Label 13300 9800 2    50   ~ 0
-CLR
-Text Label 11600 10150 2    50   ~ 0
-~RESET
-Text Label 11600 9950 2    50   ~ 0
-~IRQ
-Text Label 11600 9650 2    50   ~ 0
-E
-Text Label 11600 9550 2    50   ~ 0
-R-W
-Text Label 11600 9350 2    50   ~ 0
-PIA1
-Text Label 13300 8800 2    50   ~ 0
-BLANK
-Text Label 13250 8900 2    50   ~ 0
-CHAR
-Text Label 13250 9000 2    50   ~ 0
-PAGE
-Text Label 13200 9100 2    50   ~ 0
-ASC
-Text Label 9900 13400 0    50   ~ 0
-CASSIN
 Text Label 7750 4300 2    50   ~ 0
 A7
 Text Label 7750 4700 2    50   ~ 0
@@ -110,15 +86,13 @@ Wire Wire Line
 	15800 9350 15950 9350
 Text GLabel 15000 9950 2    50   BiDi ~ 0
 K0-K3
-Text Label 14900 9950 2    50   ~ 0
-K0-K3
-Text Label 13100 9500 2    50   ~ 0
+Text Label 13960 9500 2    50   ~ 0
 K3
-Text Label 13100 9400 2    50   ~ 0
+Text Label 13960 9400 2    50   ~ 0
 K2
-Text Label 13100 9300 2    50   ~ 0
+Text Label 13960 9300 2    50   ~ 0
 K1
-Text Label 13100 9200 2    50   ~ 0
+Text Label 13960 9200 2    50   ~ 0
 K0
 Entry Wire Line
 	14500 9850 14600 9950
@@ -129,46 +103,19 @@ Entry Wire Line
 Entry Wire Line
 	14200 9850 14300 9950
 Wire Wire Line
-	14500 9500 14700 9500
-Wire Wire Line
 	14500 9500 14500 9850
-Wire Wire Line
-	14400 9400 15200 9400
 Wire Wire Line
 	14400 9400 14400 9850
 Wire Wire Line
-	14300 9300 14900 9300
-Wire Wire Line
 	14300 9300 14300 9850
-Wire Wire Line
-	14200 9200 14800 9200
 Wire Wire Line
 	14200 9200 14200 9850
 Wire Wire Line
-	15050 9300 15200 9300
-Wire Wire Line
-	15050 9600 15050 9300
-Wire Wire Line
-	14700 9600 15050 9600
-Wire Wire Line
-	14700 9500 14700 9600
-Connection ~ 14400 9400
-Wire Wire Line
 	12900 9400 14400 9400
-Connection ~ 14300 9300
 Wire Wire Line
 	12900 9300 14300 9300
 Wire Wire Line
-	14900 9200 15200 9200
-Wire Wire Line
-	14900 9300 14900 9200
-Connection ~ 14200 9200
-Wire Wire Line
 	12900 9200 14200 9200
-Wire Wire Line
-	14800 9500 15200 9500
-Wire Wire Line
-	14800 9200 14800 9500
 $Comp
 L 74xx:74LS20 IC22
 U 1 1 6343C002
@@ -180,7 +127,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS20" H 15500 9350 50  0001 C CNN
 	1    15500 9350
 	1    0    0    -1  
 $EndComp
-Connection ~ 14500 9500
 Wire Wire Line
 	12900 9500 14500 9500
 Text GLabel 13450 9800 2    50   BiDi ~ 0
@@ -203,10 +149,6 @@ Wire Wire Line
 	12900 8900 13450 8900
 Wire Wire Line
 	12900 8800 13450 8800
-Text Label 11550 8950 2    50   ~ 0
-A6
-Text Label 11550 8850 2    50   ~ 0
-A7
 $Comp
 L power:+5V #PWR?
 U 1 1 6343C016
@@ -279,7 +221,7 @@ PIA1
 Wire Wire Line
 	11900 9350 11350 9350
 Text GLabel 11350 9550 0    50   Input ~ 0
-R-~W
+R-W
 Wire Wire Line
 	11900 9550 11350 9550
 Text GLabel 11350 9650 0    50   Input ~ 0
@@ -304,16 +246,14 @@ $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 6343C046
-P 11350 9250
-F 0 "#PWR?" H 11350 9100 50  0001 C CNN
-F 1 "+5V" V 11365 9378 50  0000 L CNN
-F 2 "" H 11350 9250 50  0001 C CNN
-F 3 "" H 11350 9250 50  0001 C CNN
-	1    11350 9250
-	0    -1   -1   0   
+P 10970 9100
+F 0 "#PWR?" H 10970 8950 50  0001 C CNN
+F 1 "+5V" V 10985 9228 50  0000 L CNN
+F 2 "" H 10970 9100 50  0001 C CNN
+F 3 "" H 10970 9100 50  0001 C CNN
+	1    10970 9100
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	11700 9250 11350 9250
 Wire Wire Line
 	11900 9250 11700 9250
 Connection ~ 11700 9250
@@ -444,10 +384,6 @@ Wire Wire Line
 	12900 7950 13650 7950
 Wire Wire Line
 	12900 7850 13650 7850
-Text Label 7350 11150 2    50   ~ 0
-A0-A15
-Text Label 10800 10800 2    50   ~ 0
-D0-D7
 $Comp
 L Aamber:TMS2532 IC18
 U 1 1 6343C094
@@ -465,8 +401,6 @@ Wire Wire Line
 	10500 8150 11900 8150
 Wire Wire Line
 	10500 8550 11900 8550
-Wire Wire Line
-	8250 8350 8500 8350
 Wire Wire Line
 	7550 7550 8500 7550
 Wire Wire Line
@@ -569,41 +503,39 @@ F 3 "" H 8900 8950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8500 5300 8200 5300
-Wire Wire Line
 	8500 11350 8200 11350
 $Comp
 L power:+5V #PWR?
 U 1 1 6343C0DB
-P 8200 5300
-F 0 "#PWR?" H 8200 5150 50  0001 C CNN
-F 1 "+5V" V 8215 5428 50  0000 L CNN
-F 2 "" H 8200 5300 50  0001 C CNN
-F 3 "" H 8200 5300 50  0001 C CNN
-	1    8200 5300
-	0    -1   -1   0   
+P 8070 5150
+F 0 "#PWR?" H 8070 5000 50  0001 C CNN
+F 1 "+5V" V 8085 5278 50  0000 L CNN
+F 2 "" H 8070 5150 50  0001 C CNN
+F 3 "" H 8070 5150 50  0001 C CNN
+	1    8070 5150
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 6343C0E1
-P 8250 8350
-F 0 "#PWR?" H 8250 8200 50  0001 C CNN
-F 1 "+5V" V 8265 8478 50  0000 L CNN
-F 2 "" H 8250 8350 50  0001 C CNN
-F 3 "" H 8250 8350 50  0001 C CNN
-	1    8250 8350
-	0    -1   -1   0   
+P 8240 8230
+F 0 "#PWR?" H 8240 8080 50  0001 C CNN
+F 1 "+5V" V 8255 8358 50  0000 L CNN
+F 2 "" H 8240 8230 50  0001 C CNN
+F 3 "" H 8240 8230 50  0001 C CNN
+	1    8240 8230
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 6343C0E7
-P 8200 11350
-F 0 "#PWR?" H 8200 11200 50  0001 C CNN
-F 1 "+5V" V 8215 11478 50  0000 L CNN
-F 2 "" H 8200 11350 50  0001 C CNN
-F 3 "" H 8200 11350 50  0001 C CNN
-	1    8200 11350
-	0    -1   -1   0   
+P 8200 11190
+F 0 "#PWR?" H 8200 11040 50  0001 C CNN
+F 1 "+5V" V 8215 11318 50  0000 L CNN
+F 2 "" H 8200 11190 50  0001 C CNN
+F 3 "" H 8200 11190 50  0001 C CNN
+	1    8200 11190
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
@@ -888,11 +820,11 @@ Connection ~ 10550 13400
 Text Label 14650 7750 2    50   ~ 0
 PA0-PA7
 $Comp
-L Aamber:6821 U?
+L Aamber:6821 IC21
 U 1 1 5EFA55F3
 P 12400 9050
-F 0 "U?" H 12400 10631 50  0000 C CNN
-F 1 "6821" H 12400 10540 50  0000 C CNN
+F 0 "IC21" H 12120 10510 50  0000 C CNN
+F 1 "6821" H 12140 10420 50  0000 C CNN
 F 2 "Package_DIP:DIP-40_W15.24mm" H 12450 7700 50  0001 L CNN
 F 3 "http://pdf.datasheetcatalog.com/datasheet/motorola/6821.pdf" H 12400 9050 50  0001 C CNN
 	1    12400 9050
@@ -1020,8 +952,6 @@ Text GLabel 9900 14650 0    50   Input ~ 0
 CASSOUT
 Wire Wire Line
 	10550 14650 9900 14650
-Text Label 10400 14650 2    50   ~ 0
-CASSOUT
 Wire Wire Line
 	12900 10200 13150 10200
 Wire Wire Line
@@ -1036,6 +966,31 @@ Wire Bus Line
 	13750 7750 14800 7750
 Text Notes 3150 3100 0    100  ~ 0
 Created: PL, 2/27/2020\nReviewed: DF, 6/4/2020
+Wire Wire Line
+	8070 5300 8070 5150
+Wire Wire Line
+	8070 5300 8500 5300
+Wire Wire Line
+	8240 8350 8240 8230
+Wire Wire Line
+	8240 8350 8500 8350
+Wire Wire Line
+	8200 11350 8200 11190
+Wire Wire Line
+	10970 9100 10970 9250
+Wire Wire Line
+	10970 9250 11700 9250
+Wire Wire Line
+	14200 9200 15200 9200
+Connection ~ 14200 9200
+Wire Wire Line
+	14300 9300 15200 9300
+Connection ~ 14300 9300
+Wire Wire Line
+	15200 9400 14400 9400
+Connection ~ 14400 9400
+Wire Wire Line
+	14500 9500 15200 9500
 Wire Bus Line
 	14300 9950 15000 9950
 Wire Bus Line
@@ -1044,4 +999,5 @@ Wire Bus Line
 	7450 3700 7450 11150
 Wire Bus Line
 	10400 3700 10400 10800
+Connection ~ 14500 9500
 $EndSCHEMATC

@@ -792,7 +792,7 @@ $EndSheet
 $Sheet
 S 4400 16000 8100 7400
 U 63541131
-F0 "Page 4: RAM and User I/O" 200
+F0 "Page 5: RAM and User I/O" 200
 F1 "page-5-ram-userio.sch" 200
 $EndSheet
 $Sheet
@@ -844,4 +844,5 @@ Connection ~ 35250 29900
 Wire Wire Line
 	35250 29900 36550 29900
 NoConn ~ 8900 7250
+NoConn ~ 33750 18700
 $EndSCHEMATC

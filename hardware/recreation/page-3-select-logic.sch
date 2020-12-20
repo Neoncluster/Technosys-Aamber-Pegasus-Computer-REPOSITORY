@@ -97,8 +97,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 14250 11950 50  0001 C CNN
 	3    14250 11950
 	1    0    0    1   
 $EndComp
-Text Label 15000 11950 2    50   ~ 0
-~SEL
 Wire Wire Line
 	15050 11950 14550 11950
 Wire Wire Line
@@ -208,22 +206,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 10250 12050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	12600 7950 11900 7950
-Wire Wire Line
-	12300 7650 12300 7750
-Wire Wire Line
-	12300 7750 12600 7750
-Wire Wire Line
-	12000 7650 12300 7650
-Wire Wire Line
-	12000 7850 12000 7650
-Wire Wire Line
-	11900 7850 12000 7850
-Wire Wire Line
-	12150 7750 11900 7750
-Wire Wire Line
-	12150 7850 12150 7750
-Wire Wire Line
-	12600 7850 12150 7850
 $Comp
 L 74xx:74LS21 IC4
 U 2 1 6335CC7B
@@ -263,28 +245,6 @@ Text Label 10850 4350 2    50   ~ 0
 A11
 Text Label 10800 3600 2    50   ~ 0
 A9
-Text Label 12250 3500 2    50   ~ 0
-RESERVE
-Text Label 12250 3600 2    50   ~ 0
-CHAR-ROM
-Text Label 12250 3700 2    50   ~ 0
-PIA2
-Text Label 12250 3800 2    50   ~ 0
-PIA1
-Text Label 12200 4350 2    50   ~ 0
-RAM4
-Text Label 12200 4450 2    50   ~ 0
-RAM3
-Text Label 12200 4550 2    50   ~ 0
-RAM2
-Text Label 12200 4650 2    50   ~ 0
-RAM1
-Text Label 12900 5350 2    50   ~ 0
-ROM3
-Text Label 12900 5800 2    50   ~ 0
-ROM2
-Text Label 12200 6000 2    50   ~ 0
-ROM1
 Wire Wire Line
 	10900 3600 8050 3600
 Wire Wire Line
@@ -533,4 +493,8 @@ NoConn ~ 11900 10100
 NoConn ~ 11900 10200
 Text Notes 5950 2600 0    100  ~ 0
 Created: PL, 2/27/2020\nReviewed: DF, 5/11/2020
+Wire Wire Line
+	11900 7750 12600 7750
+Wire Wire Line
+	11900 7850 12600 7850
 $EndSCHEMATC

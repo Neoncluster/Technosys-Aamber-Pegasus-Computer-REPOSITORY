@@ -777,10 +777,10 @@ Wire Bus Line
 	13350 10100 10350 10100
 Connection ~ 10350 10100
 $Comp
-L Interface:6821 IC19
+L Interface:6821 IC29
 U 1 1 635533EB
 P 11950 11900
-F 0 "IC19" H 11600 13450 50  0000 C CNN
+F 0 "IC29" H 11600 13450 50  0000 C CNN
 F 1 "6821" H 11600 13350 50  0000 C CNN
 F 2 "Package_DIP:DIP-40_W15.24mm" H 12000 10550 50  0001 L CNN
 F 3 "http://pdf.datasheetcatalog.com/datasheet/motorola/6821.pdf" H 11950 11900 50  0001 C CNN
@@ -845,17 +845,17 @@ F 3 "" H 11950 10500 50  0001 C CNN
 	1    11950 10500
 	1    0    0    -1  
 $EndComp
-Text GLabel 10900 11700 0    50   Input ~ 0
+Text GLabel 10690 11700 0    50   Input ~ 0
 A6
-Text GLabel 10900 11800 0    50   Input ~ 0
+Text GLabel 10690 11800 0    50   Input ~ 0
 A5
-Text GLabel 10900 12200 0    50   Input ~ 0
+Text GLabel 10760 12200 0    50   Input ~ 0
 PIA2
-Text GLabel 10900 12400 0    50   Input ~ 0
-R-~W
+Text GLabel 10770 12400 0    50   Input ~ 0
+R-W
 Text GLabel 10650 12500 0    50   Input ~ 0
 E
-Text GLabel 10900 13000 0    50   Input ~ 0
+Text GLabel 10830 13000 0    50   Input ~ 0
 ~RESET
 $Comp
 L power:+5V #PWR?
@@ -868,12 +868,12 @@ F 3 "" H 10000 11950 50  0001 C CNN
 	1    10000 11950
 	1    0    0    -1  
 $EndComp
-Text GLabel 10900 12800 0    50   Output ~ 0
+Text GLabel 10720 12800 0    50   Output ~ 0
 ~IRQ
 Wire Wire Line
-	11450 11700 10900 11700
+	11450 11700 10690 11700
 Wire Wire Line
-	11450 11800 10900 11800
+	11450 11800 10690 11800
 Wire Wire Line
 	11450 11400 10450 11400
 Entry Wire Line
@@ -999,7 +999,7 @@ Wire Wire Line
 Wire Wire Line
 	12950 13000 12450 13000
 Wire Wire Line
-	11450 13000 10900 13000
+	11450 13000 10830 13000
 Wire Wire Line
 	11450 12700 11250 12700
 Wire Wire Line
@@ -1007,14 +1007,14 @@ Wire Wire Line
 Wire Wire Line
 	11250 12800 11450 12800
 Wire Wire Line
-	11250 12800 10900 12800
+	11250 12800 10720 12800
 Connection ~ 11250 12800
 Wire Wire Line
 	11450 12500 10650 12500
 Wire Wire Line
-	11450 12400 10900 12400
+	11450 12400 10770 12400
 Wire Wire Line
-	11450 12200 10900 12200
+	11450 12200 10760 12200
 Wire Wire Line
 	11250 12000 11250 12100
 Wire Wire Line
@@ -1022,7 +1022,7 @@ Wire Wire Line
 Wire Wire Line
 	11250 12000 11450 12000
 Text GLabel 14900 4350 2    50   Input ~ 0
-R-~W
+R-W
 Wire Wire Line
 	14600 4350 14600 5250
 Wire Wire Line
@@ -1077,24 +1077,24 @@ Text GLabel 14000 11650 2    50   BiDi ~ 0
 UA0-UA7
 Wire Bus Line
 	13300 11650 14000 11650
-Wire Bus Line
-	13300 10800 13300 11650
-Wire Bus Line
-	10350 10100 10350 11300
-Wire Bus Line
-	13350 3250 13350 10100
-Wire Bus Line
-	10350 3900 10350 10100
-Wire Bus Line
-	11000 3250 11000 8950
-Wire Bus Line
-	8000 3250 8000 9000
-Wire Bus Line
-	13300 12100 13300 12950
 Text GLabel 14000 12950 2    50   BiDi ~ 0
 UB0-UB7
 Wire Bus Line
 	13300 12950 14000 12950
 Text Notes 6050 2550 0    50   ~ 0
 Created: PL, 2/27/2020\nReviewed: DF, 11/28/2020
+Wire Bus Line
+	13300 10800 13300 11650
+Wire Bus Line
+	10350 10100 10350 11300
+Wire Bus Line
+	13300 12100 13300 12950
+Wire Bus Line
+	10350 3900 10350 10100
+Wire Bus Line
+	13350 3250 13350 10100
+Wire Bus Line
+	8000 3250 8000 9000
+Wire Bus Line
+	11000 3250 11000 8950
 $EndSCHEMATC

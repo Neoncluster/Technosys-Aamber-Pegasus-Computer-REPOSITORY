@@ -15,20 +15,6 @@ Comment4 ""
 $EndDescr
 Text Label 14050 5350 2    50   ~ 0
 ~SEL
-Text Label 13850 5250 2    50   ~ 0
-~R~-W
-Text Label 3250 7800 0    50   ~ 0
-~RESET
-Text Label 3450 8200 2    50   ~ 0
-~FIRQ
-Text Label 3400 8600 2    50   ~ 0
-~DMA
-Text Label 3300 8900 2    50   ~ 0
-~H
-Text Label 10250 11350 2    50   ~ 0
-R-~W
-Text Label 10250 11200 2    50   ~ 0
-E
 $Comp
 L Device:R R5
 U 1 1 63124031
@@ -314,8 +300,6 @@ Text Label 15500 4450 2    50   ~ 0
 D1
 Text Label 15500 4350 2    50   ~ 0
 D0
-Text Label 16100 5500 2    50   ~ 0
-D0-D7
 Wire Wire Line
 	15500 5050 15150 5050
 Wire Wire Line
@@ -348,8 +332,6 @@ Entry Wire Line
 	15500 4450 15600 4550
 Entry Wire Line
 	15500 4350 15600 4450
-Text Label 16150 9750 2    50   ~ 0
-A8-A15
 Wire Wire Line
 	15700 9200 15150 9200
 Wire Wire Line
@@ -440,7 +422,7 @@ Wire Wire Line
 Text GLabel 13800 5350 0    50   Input ~ 0
 ~SEL
 Text GLabel 13600 5250 0    50   Input ~ 0
-R-~W
+~R-W
 Wire Wire Line
 	14150 5250 13600 5250
 $Comp
@@ -585,7 +567,7 @@ $EndComp
 Text GLabel 3100 9100 0    50   Output ~ 0
 MR
 Text GLabel 9800 11350 0    50   Output ~ 0
-R-~W
+R-W
 $Comp
 L Device:R R12
 U 1 1 63124184
@@ -753,21 +735,18 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 631241F9
-P 13700 9800
-F 0 "#PWR?" H 13700 9550 50  0001 C CNN
-F 1 "GND" H 13705 9672 50  0000 R CNN
-F 2 "" H 13700 9800 50  0001 C CNN
-F 3 "" H 13700 9800 50  0001 C CNN
-	1    13700 9800
+P 13700 10030
+F 0 "#PWR?" H 13700 9780 50  0001 C CNN
+F 1 "GND" H 13705 9902 50  0000 R CNN
+F 2 "" H 13700 10030 50  0001 C CNN
+F 3 "" H 13700 10030 50  0001 C CNN
+	1    13700 10030
 	1    0    0    -1  
 $EndComp
-Connection ~ 13700 9800
-Wire Wire Line
-	14650 9800 13700 9800
 Wire Wire Line
 	13700 8000 13700 9400
 Wire Wire Line
-	13700 9800 13700 9400
+	13700 10030 13700 9900
 Connection ~ 13700 9400
 Wire Wire Line
 	13700 9400 14150 9400
@@ -874,8 +853,6 @@ F 3 "~" H 8000 6950 50  0001 C CNN
 	1    8000 6950
 	-1   0    0    -1  
 $EndComp
-Text Label 3400 8000 2    50   ~ 0
-~IRQ
 Wire Wire Line
 	6300 10900 7400 10900
 Wire Wire Line
@@ -937,8 +914,6 @@ Wire Wire Line
 	4100 9000 4100 9100
 Wire Wire Line
 	4100 9100 3100 9100
-Text Label 3250 9100 0    50   ~ 0
-MR
 Wire Wire Line
 	8000 7100 8000 9000
 Connection ~ 8000 9000
@@ -995,8 +970,15 @@ NoConn ~ 12700 8800
 NoConn ~ 12700 8700
 Text Notes 3750 2850 0    100  ~ 0
 Created: PL, 2/27/2020\nReviewed: DF, 5/11/2020
+Wire Wire Line
+	14650 9800 14650 9900
+Wire Wire Line
+	14650 9900 13700 9900
 Wire Bus Line
 	15600 4450 15600 5500
 Wire Bus Line
 	15800 6800 15800 9750
+Connection ~ 13700 9900
+Wire Wire Line
+	13700 9900 13700 9400
 $EndSCHEMATC
