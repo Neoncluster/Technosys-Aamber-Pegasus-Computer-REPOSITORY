@@ -991,6 +991,7 @@ Wire Wire Line
 Connection ~ 14400 9400
 Wire Wire Line
 	14500 9500 15200 9500
+Connection ~ 14500 9500
 Wire Bus Line
 	14300 9950 15000 9950
 Wire Bus Line
@@ -999,5 +1000,4 @@ Wire Bus Line
 	7450 3700 7450 11150
 Wire Bus Line
 	10400 3700 10400 10800
-Connection ~ 14500 9500
 $EndSCHEMATC
