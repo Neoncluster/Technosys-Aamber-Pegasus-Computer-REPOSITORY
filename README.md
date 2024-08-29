@@ -10,7 +10,7 @@ This GitHub repository contains everything I was able to find over a 6 year span
 
 The schematics you see on this page were drawn by me, with assistance from Dave at osiweb.org, with the intent of building a recreation. As they currently stand, the schematics are not complete enough to build a system and are essentially a copy of the ones found in the Technosys manuals, which are known to have errors. The recreation process hass stalled, but fortunately, Neil has picked up the torch, and a recreated AAMBER PEGASUS has been designed, built, and tested by multiple people, and to my surprise, Niel lives just on the other side of town!
 
+Here is a link to Neil's page:
+(https://github.com/Neil427/PEGASUS_2023_REVIVAL)
 
-
-XXXXXXXXXX
 ![Screenshot 2024-08-30 at 10 43 23 AM](https://github.com/user-attachments/assets/a75993c5-9243-4d1c-9abc-0f6aac56ef81)
