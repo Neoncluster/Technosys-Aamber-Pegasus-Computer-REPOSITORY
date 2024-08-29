@@ -1,6 +1,8 @@
 
-![Screens![1510874506_SystemLogo png a663dce70ef79eb7ab986ffba35a37ba](https://github.com/user-attachments/assets/8a25a439-1027-44b4-ac60-7edcbfed710c)
 hot 2024-08-30 at 11 39 51 AM](https://github.com/user-attachments/assets/e7e3089d-35b2-4101-8997-a530a0ae8767)
+
+![Screenshot 2024-08-30 at 11 48 07 AM](https://github.com/user-attachments/assets/8b26752b-27a8-4d25-861a-bb9b2d95945c)
+
 
 A quick story:
 
