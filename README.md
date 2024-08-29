@@ -1,5 +1,5 @@
 
-hot 2024-08-30 at 11 39 51 AM](https://github.com/user-attachments/assets/e7e3089d-35b2-4101-8997-a530a0ae8767)
+![Screenshot 2024-08-30 at 11 39 51 AM](https://github.com/user-attachments/assets/9eb25d82-8d87-4b7b-ae82-4e5a692e2aa8)
 
 ![Screenshot 2024-08-30 at 11 48 07 AM](https://github.com/user-attachments/assets/8b26752b-27a8-4d25-861a-bb9b2d95945c)
 
