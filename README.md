@@ -1,6 +1,7 @@
 
 ![Screenshot 2024-08-30 at 11 48 07 AM](https://github.com/user-attachments/assets/8b26752b-27a8-4d25-861a-bb9b2d95945c)
-/Users/philip/Desktop/Aamber Pegasus2.jpg
+![Aamber Pegasus2](https://github.com/user-attachments/assets/d52fe277-1356-43d8-8c1f-e5e754066c58)
+
 
 
 A quick story:
