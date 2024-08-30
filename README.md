@@ -23,4 +23,3 @@ My recreation process has stalled, but fortunately, Neil has picked up the torch
 Here is a link to Neil's page:
 (https://github.com/Neil427/PEGASUS_2023_REVIVAL)
 
-![285559723-e8e0ff9c-03bd-4ccc-b3fb-7b80d8bbb430](https://github.com/user-attachments/assets/43a36941-aa5a-44b4-b029-047875a7396c)
