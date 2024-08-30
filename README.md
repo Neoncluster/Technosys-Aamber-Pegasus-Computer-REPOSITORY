@@ -13,8 +13,10 @@ In 1984, my best friend's dad was involved with a New Zealand-based computer com
 
 Fast forward to 2010, and I happened across another system, and acquired it. I was surprised by the total lack of information online about this precious piece of New Zealand history, so I set out to change that. 
 
-Over many years, I contacted dozens of people, sent hundreds of emails, and gradually managed to gather a wealth of information about Technosys and AAMBER PEGASUS, including manuals, software, ROM dumps and stories from various sources. I even wrote and ported a few classic BASIC games to it myself. At one point I had a vintage computer focused webpage (neoncluster.com) that served as my AAMBER PEGASUS repository, and included interviews with multiple Technosys employees too. I built the Aamber Pegasus Wiki, and was even briefly involved with the MESS emulation of the AAMBER PEGASUS too, although I didn't do much beyond provide information and do some beta testing.
+Over many years, I contacted dozens of people, sent hundreds of emails, and gradually managed to gather a wealth of information about Technosys and AAMBER PEGASUS, including manuals, software, ROM dumps and stories from various sources. I even wrote and ported a few classic BASIC games to it myself. At one point I had a vintage computer focused webpage (neoncluster.com) that served as my AAMBER PEGASUS repository, and included interviews with multiple Technosys employees too. I built the Aamber Pegasus Wiki (https://en.wikipedia.org/wiki/Aamber_Pegasus), and was even briefly involved with the MESS emulation of the AAMBER PEGASUS too, although I didn't do much beyond provide information and do some beta testing.
 Over the years I have collected 3 seperate systems, but recently I passed one system onto another enthusiast and collector to enjoy.
+
+
 
 This GitHub repository contains everything I was able to find over a 6 year span. I'm proud to say that 99% of all AAMBER PEGASUS information now available on the internet has come via me and my old webpage at somepoint. The legacy lives on! I want to extend a heartfelt thank you to everyone who helped with this work. Cheers!
 
