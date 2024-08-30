@@ -18,7 +18,7 @@ Over the years I have collected 3 seperate systems, but recently I passed one sy
 
 
 
-This GitHub repository contains everything I was able to find over a 6 year span. I'm proud to say that 99% of all AAMBER PEGASUS information now available on the internet has come via me and my old webpage at somepoint. The legacy lives on! I want to extend a heartfelt thank you to everyone who helped with this work. Cheers!
+This GitHub repository contains everything I was able to find over a 6 year span. I'm proud to say that 99% of all AAMBER PEGASUS information now available on the internet has come via me and my old webpage at somepoint. The legacy lives on! I want to extend a heartfelt 'thank you' to everyone who helped with this work. Cheers!
 
 The schematics you see on this page were drawn by me, with a lot of assistance from Dave at osiweb.org. The intent was to design and build an AAMBER PEGASUS recreation. That never happened. As the scematics currently stand, they are not complete enough to build a system and are essentially a copy of the ones found in the Technosys manuals. The schematics in the manuals are known to have some quirks and possible errors.
 
