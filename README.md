@@ -6,7 +6,7 @@
 
 A quick story:
 
-In 1984, my best friend's dad was involved with a New Zealand-based computer company called Technosys, which made the AAMBER PEGASUS computer. I remember having so much fun on these magic boxes as a kid. When the company folded shortly afterward, my friend's dad gave me a complete system. Unfortunately, the machine was thrown out by my parents while I was at university.
+In 1982, my best friend's dad was involved with a New Zealand-based computer company called Technosys, which made the AAMBER PEGASUS computer. I remember having so much fun on these magic boxes as a kid. When the company folded shortly afterward, my friend's dad gave me a complete system. Unfortunately, the machine was thrown out by my parents while I was at university.
 
 ![Screenshot 2024-08-30 at 11 40 07 AM](https://github.com/user-attachments/assets/747b10c9-19d1-4bbf-b244-9aa0462e63c4)
 
