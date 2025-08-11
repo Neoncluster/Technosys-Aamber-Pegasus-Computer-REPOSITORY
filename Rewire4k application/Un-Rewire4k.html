@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Rewire4k / Aamber Pegasus — EPROM Rewiring</title>
+<style>
+  body { background:#0b0f12; color:#e6eef3; font-family:Inter,system-ui; padding:20px; }
+  h1,h2 { color:#bfe7a6; }
+  table { border-collapse:collapse; margin:10px 0; background:rgba(255,255,255,0.04); }
+  th,td { padding:4px 8px; border-bottom:1px solid rgba(255,255,255,0.1); }
+  pre { background:#071018; padding:10px; overflow:auto; }
+  .card { background:rgba(255,255,255,0.03); padding:14px; margin:14px 0; border-radius:6px; }
+  .small { font-size:0.85rem; color:#aaa; }
+  input,button,select { margin:6px 0; }
+</style>
+</head>
+<body>
+<h1>Rewire4k / Aamber Pegasus — EPROM Rewiring</h1>
+
+<div class="card">
+<h2>Upload binary to rewire</h2>
+<input type="file" id="fileInput" accept=".bin" />
+<br>
+<label>
+  Direction:
+  <select id="direction">
+    <option value="toNormal">Pegasus → Normal</option>
+    <option value="toPegasus">Normal → Pegasus</option>
+  </select>
+</label>
+<br>
+<button id="rewireBtn">Rewire &amp; Download</button>
+<p class="small">Choose the direction: <b>Pegasus → Normal</b> unscrambles a raw dump; <b>Normal → Pegasus</b> scrambles a clean image for burning into an EPROM.</p>
+</div>
+
+<div class="card">
+<h2>24-pin mapping table</h2>
+<table>
+<thead>
+<tr><th>socket pin#</th><th>2532 designation</th><th>pegasus designation</th><th>plug pin#</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>A7</td><td>A0</td><td>8</td></tr>
+<tr><td>2</td><td>A6</td><td>A1</td><td>7</td></tr>
+<tr><td>3</td><td>A5</td><td>A2</td><td>6</td></tr>
+<tr><td>4</td><td>A4</td><td>A3</td><td>5</td></tr>
+<tr><td>5</td><td>A3</td><td>A4</td><td>4</td></tr>
+<tr><td>6</td><td>A2</td><td>A5</td><td>3</td></tr>
+<tr><td>7</td><td>A1</td><td>A6</td><td>2</td></tr>
+<tr><td>8</td><td>A0</td><td>A7</td><td>1</td></tr>
+
+<tr><td>9</td><td>D0</td><td>D4</td><td>14</td></tr>
+<tr><td>10</td><td>D1</td><td>D5</td><td>15</td></tr>
+<tr><td>11</td><td>D2</td><td>D6</td><td>16</td></tr>
+<tr><td>12</td><td>Vss</td><td>Vss</td><td>12</td></tr>
+<tr><td>13</td><td>D3</td><td>D7</td><td>17</td></tr>
+<tr><td>14</td><td>D4</td><td>D0</td><td>9</td></tr>
+<tr><td>15</td><td>D5</td><td>D1</td><td>10</td></tr>
+<tr><td>16</td><td>D6</td><td>D2</td><td>11</td></tr>
+<tr><td>17</td><td>D7</td><td>D3</td><td>13</td></tr>
+
+<tr><td>18</td><td>A11</td><td>A11</td><td>18</td></tr>
+<tr><td>19</td><td>A10</td><td>A10</td><td>19</td></tr>
+<tr><td>20</td><td>PD/PGM</td><td>PD/PGM</td><td>20</td></tr>
+<tr><td>21</td><td>Vpp</td><td>Vpp</td><td>21</td></tr>
+<tr><td>22</td><td>A9</td><td>A9</td><td>22</td></tr>
+<tr><td>23</td><td>A8</td><td>A8</td><td>23</td></tr>
+<tr><td>24</td><td>Vcc</td><td>Vcc</td><td>24</td></tr>
+</tbody>
+</table>
+</div>
+
+<script>
+// Address mapping: index = output bit position, value = source bit position
+const addrMap = [7,6,5,4,3,2,1,0,8,9,10,11]; 
+// Data mapping: index = output bit position, value = source bit position
+const dataMap = [4,5,6,7,0,1,2,3];
+
+// Reverse map generator
+function invertMap(map) {
+  const rev = [];
+  for (let i = 0; i < map.length; i++) {
+    rev[map[i]] = i;
+  }
+  return rev;
+}
+const addrMapRev = invertMap(addrMap);
+const dataMapRev = invertMap(dataMap);
+
+function rewireArrayBuffer(rawBuffer, direction) {
+  const raw = new Uint8Array(rawBuffer);
+  const size = raw.length;
+  const out = new Uint8Array(size);
+
+  const addrBits = addrMap.length;
+  const am = (direction === 'toNormal') ? addrMap : addrMapRev;
+  const dm = (direction === 'toNormal') ? dataMap : dataMapRev;
+
+  for (let outAddr = 0; outAddr < size; outAddr++) {
+    // remap address lines
+    let inAddr = 0;
+    for (let bit = 0; bit < addrBits; bit++) {
+      if (outAddr & (1 << bit)) {
+        inAddr |= (1 << am[bit]);
+      }
+    }
+    const inByte = raw[inAddr];
+    // remap data lines
+    let outByte = 0;
+    for (let bit = 0; bit < 8; bit++) {
+      if (inByte & (1 << dm[bit])) {
+        outByte |= (1 << bit);
+      }
+    }
+    out[outAddr] = outByte;
+  }
+  return out.buffer;
+}
+
+document.getElementById('rewireBtn').addEventListener('click', () => {
+  const fileInput = document.getElementById('fileInput');
+  const direction = document.getElementById('direction').value;
+  if (!fileInput.files.length) {
+    alert('Please select a .bin file first.');
+    return;
+  }
+  const file = fileInput.files[0];
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const rewiredBuffer = rewireArrayBuffer(e.target.result, direction);
+    const blob = new Blob([rewiredBuffer], { type: 'application/octet-stream' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    const suffix = (direction === 'toNormal') ? '_rewired.bin' : '_pegasus.bin';
+    a.href = url;
+    a.download = file.name.replace(/\.bin$/i, '') + suffix;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+  reader.readAsArrayBuffer(file);
+});
+</script>
+
+</body>
+</html>
